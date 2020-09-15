@@ -18,8 +18,8 @@ public class CountingSort {
 
 
         //reload the Count Array
-        for (int i = 0 ; i < input.length; i++) {
-            countArray[input[i]-min]++;
+        for (int k : input) {
+            countArray[k - min]++;
         }
 
         //Sort the Array by Count Array
@@ -33,8 +33,8 @@ public class CountingSort {
     }
 
     public static void display(int[] arr){
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
