@@ -1,4 +1,4 @@
-package com.deepdive.section6.queues.vo;
+package com.deepdive.section7.hashtables.vo;
 
 import java.util.Objects;
 

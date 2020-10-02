@@ -1,7 +1,5 @@
 package com.deepdive.section6.queues;
 
-import com.deepdive.section6.queues.vo.Employee;
-
 public class CircularArrayQueueTest {
     public static void main(String[] args) {
         Employee e1 = new Employee(123,"Ankush", "Manager", 2000);

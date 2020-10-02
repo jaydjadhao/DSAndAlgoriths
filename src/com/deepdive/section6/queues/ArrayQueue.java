@@ -1,7 +1,5 @@
 package com.deepdive.section6.queues;
 
-import com.deepdive.section6.queues.vo.Employee;
-
 import java.util.NoSuchElementException;
 
 public class ArrayQueue {
