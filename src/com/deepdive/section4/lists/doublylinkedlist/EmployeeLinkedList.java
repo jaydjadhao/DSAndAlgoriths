@@ -8,22 +8,10 @@ public class EmployeeLinkedList {
     int size;
 
     //getters and setters
-
     public EmployeeNode getHead() {
         return head;
     }
 
-    public void setHead(EmployeeNode head) {
-        this.head = head;
-    }
-
-    public EmployeeNode getTail() {
-        return tail;
-    }
-
-    public void setTail(EmployeeNode tail) {
-        this.tail = tail;
-    }
 
     public int getSize() {
         return size;
@@ -34,13 +22,16 @@ public class EmployeeLinkedList {
 
     public void displayList() {
         System.out.print("HEAD->");
-        EmployeeNode currentNode = getHead();
-        while (currentNode != null) {
-            System.out.print(currentNode);
-            System.out.print("<==>");
-            currentNode = currentNode.getNext();
+//        EmployeeNode currentNode = getHead();
+//        while (currentNode != null) {
+//            System.out.print(currentNode);
+//            System.out.print("<==>");
+//            currentNode = currentNode.getNext();
+//        }
+        for (EmployeeNode currentNode = getHead(); currentNode != null; currentNode = currentNode.getNext()){
+            System.out.print(currentNode + "<==>");
         }
-        System.out.print("TAIL");
+        System.out.print("TAIL \n");
     }
 
     public boolean isEmpty() {
@@ -116,17 +107,17 @@ public class EmployeeLinkedList {
     }
 
     // add before
-    public void addBefore(Employee srcEmp, Employee trgtEmp) {
+    public void addBefore(Employee srcEmp, Employee targetEmp) {
         //check if list is Empty
         if (isEmpty()) {
             System.err.println("List Is Empty!!!");
             return;
         }
         //search for the targetNode if returns null means search item is not found
-        EmployeeNode targetNode = searchNode(trgtEmp);
+        EmployeeNode targetNode = searchNode(targetEmp);
         if (targetNode == null) {
             System.err.println("Target item is not Found in List !!!");
-            System.err.println("Target Item : " + trgtEmp);
+            System.err.println("Target Item : " + targetEmp);
         } else {
             EmployeeNode srcNode = new EmployeeNode(srcEmp);
             //check if need to add as first node
@@ -155,17 +146,17 @@ public class EmployeeLinkedList {
         return currentNode;
     }
 
-    public void addAfter(Employee srcEmp, Employee trgtEmp) {
+    public void addAfter(Employee srcEmp, Employee targetEmp) {
         //check if list is Empty
         if (isEmpty()) {
             System.err.println("List Is Empty!!!");
             return;
         }
         //search for the targetNode if returns null means search item is not found
-        EmployeeNode targetNode = searchNode(trgtEmp);
+        EmployeeNode targetNode = searchNode(targetEmp);
         if (targetNode == null) {
             System.err.println("Target item is not Found in List !!!");
-            System.err.println("Target Item : " + trgtEmp);
+            System.err.println("Target Item : " + targetEmp);
         } else {
             EmployeeNode srcNode = new EmployeeNode(srcEmp);
             //check if node need to add as last node

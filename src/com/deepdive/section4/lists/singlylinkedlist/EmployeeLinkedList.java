@@ -4,8 +4,6 @@ import com.deepdive.section4.lists.vo.Employee;
 
 public class EmployeeLinkedList {
     private EmployeeNode head;
-
-
     private int size;
 
     public EmployeeNode getHead() {

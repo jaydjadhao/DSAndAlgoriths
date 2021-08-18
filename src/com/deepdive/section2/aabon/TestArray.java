@@ -26,7 +26,5 @@ public class TestArray {
         }
         System.out.println(index);
 
-
-
     }
 }

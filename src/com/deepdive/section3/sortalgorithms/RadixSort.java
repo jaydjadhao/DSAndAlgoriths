@@ -8,10 +8,10 @@ public class RadixSort {
     public static void main(String[] args) {
 
         int[] intArray = {2448,9897,1210,3462,2112,5464};
-        System.out.println("Array Before Swap : ");
+        System.out.println("Array Before Sort : ");
         display(intArray);
         radixSort(intArray,4, 10);
-        System.out.println("Array After Swap : ");
+        System.out.println("Array After Sort : ");
         display(intArray);
 
     }

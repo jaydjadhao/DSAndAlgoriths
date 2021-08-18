@@ -4,10 +4,10 @@ public class CountingSort {
     public static void main(String[] args) {
 
         int[] intArray = {8,7,10,2,2,4,6,9,5,7};
-        System.out.println("Array Before Swap : ");
+        System.out.println("Array Before Sort : ");
         display(intArray);
         countingSort(intArray, 1, 10);
-        System.out.println("Array After Swap : ");
+        System.out.println("Array After Sort : ");
         display(intArray);
 
     }
