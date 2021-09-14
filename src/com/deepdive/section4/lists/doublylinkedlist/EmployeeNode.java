@@ -3,6 +3,7 @@ package com.deepdive.section4.lists.doublylinkedlist;
 import com.deepdive.section4.lists.vo.Employee;
 
 import java.util.Objects;
+import java.util.stream.Stream;
 
 public class EmployeeNode {
     EmployeeNode previous;
